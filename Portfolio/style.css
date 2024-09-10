@@ -1,0 +1,87 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: none;
+}
+@media screen {
+
+}
+html,body{
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-image: linear-gradient(to bottom, #8b9da9, #fff6e4);
+  background-attachment: fixed; /* Faz o gradiente permanecer fixo na tela */
+  box-shadow: inset 0 0 100px hsla(0, 0%, 0%, .3);
+}
+ nav{
+   width: 80%;
+   height: 80px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   margin-left: 10%;
+   margin-right:10% ;
+   margin-top: 30px;
+ }
+ nav ul{
+
+   display: inline-flex;
+   flex-direction: row;
+   outline: none;
+   text-decoration: none;
+ }
+ nav ul li{
+   outline: none;
+   display: inline-flex;
+   margin: 30px;
+   color: #dadada;
+ }
+ #text{
+   padding-top: 200px;
+   text-align: left;
+   height: 700px;
+   width: 50%;
+   margin-left: 25%;
+   margin-right: 25%;
+
+   color: #7e8d98;
+ }
+#text h1{
+  font-size: 50px;
+margin-bottom: 30px;
+  font-family: "Apple SD Gothic Neo";
+
+
+}
+nav a{
+  text-decoration: none;
+  color: #dadada;
+}
+
+li {
+  transition: transform 0.3s ease, color 0.3s ease; /* Transição suave */
+}
+
+li:hover {
+  transform: scale(1.1); /* Aumenta o tamanho suavemente */
+  color: #fff; /* Altera a cor no hover */
+}
+#text p{
+  font-family: Blorado, sans-serif;
+  text-rendering: geometricprecision;
+  font-size: 16px;
+}
+
+#logo img{
+  width: 130px;
+
+}
+#text img{
+  height: 15px;
+  width: 15px;
+  margin-top: 20px;
+  margin-right: 10px;
+}

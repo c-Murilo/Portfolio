@@ -1,0 +1,159 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  object-fit: cover;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-image: linear-gradient(to bottom, #8b9da9, #fff6e4);
+  background-attachment: fixed;
+  box-shadow: inset 0 0 100px hsla(0, 0%, 0%, .3);
+}
+
+/* Barra de navegação */
+nav {
+  width: 80%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 10%;
+}
+
+nav a {
+  text-decoration: none;
+  color: #dadada;
+}
+
+li {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+li:hover {
+  transform: scale(1.1);
+  color: #fff;
+}
+
+#logo img {
+  width: 130px;
+}
+
+nav ul {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+nav ul li {
+  display: inline-flex;
+  margin: 30px;
+  color: #dadada;
+}
+
+/* Main Content */
+main {
+  width: 50%;
+  margin: 100px auto 0;
+}
+
+main h1 {
+
+  font-size: 60px;
+  letter-spacing: 3px;
+  color: #dadada;
+  font-family: "Apple SD Gothic Neo";
+  text-rendering: geometricprecision;
+}
+
+/* Grid de Cards */
+.contain {
+  width: 90%;
+  margin: 50px auto 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(270px, 1fr));
+  grid-gap: 30px;
+  justify-content: center;
+}
+
+.cards {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.projects {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  padding-top: 30px;
+  border: solid 1px;
+}
+
+.cards img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Media Queries para responsividade */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  main {
+    width: 80%;
+    padding-top: 50px;
+  }
+
+  main h1 {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    width: 90%;
+    margin: 10px 5%;
+  }
+
+  #logo img {
+    width: 100px;
+  }
+
+  main {
+    width: 90%;
+  }
+
+  main h1 {
+    font-size: 36px;
+    padding-left: 20px;
+  }
+
+  .projects {
+    width: 200px;
+    height: 200px;
+  }
+
+  .cards {
+    height: 200px;
+  }
+}
